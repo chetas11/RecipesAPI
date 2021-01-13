@@ -9,5 +9,6 @@ app
 .use(bodyParser.json())
 .get("/", (req,res) =>{
     const data = AllReceipesData
+    console.log(data)
 })
 .listen(process.env.PORT || 8000)
